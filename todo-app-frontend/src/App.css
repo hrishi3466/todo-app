@@ -1,0 +1,33 @@
+/* Root layout */
+#root {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Optional: Highlight card styling */
+.card {
+  border-radius: 0.75rem;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.card:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+/* Strike-through for completed task */
+.card-title.text-decoration-line-through {
+  font-style: italic;
+}
+
+/* Custom spinner override (optional) */
+.spinner-border {
+  width: 2rem;
+  height: 2rem;
+}
+
+/* Button responsiveness for filter section */
+@media (max-width: 576px) {
+  .btn {
+    flex: 1 1 auto;
+  }
+}
